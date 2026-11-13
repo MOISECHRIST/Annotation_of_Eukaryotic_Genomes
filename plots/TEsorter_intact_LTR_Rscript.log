@@ -1,0 +1,126 @@
+Warning: Your system is mis-configured: ‘/etc/localtime’ is not a symlink
+Warning: ‘/etc/localtime’ is not identical to any known timezone file
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, isoyear, mday, minute, month, quarter, second, wday,
+    week, yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:purrr’:
+
+    transpose
+
+
+Attaching package: ‘cowplot’
+
+The following object is masked from ‘package:lubridate’:
+
+    stamp
+
+Reading GFF: intact_LTR.gff3
+         V1   V2                        V3     V4     V5 V6 V7 V8
+1 contig_53 EDTA Gypsy_LTR_retrotransposon 389570 399461  .  -  .
+2 contig_53 EDTA Copia_LTR_retrotransposon 791457 796885  .  +  .
+3 contig_53 EDTA Copia_LTR_retrotransposon 845770 853308  .  +  .
+4 contig_53 EDTA Gypsy_LTR_retrotransposon 869090 875697  .  -  .
+5 contig_58 EDTA Gypsy_LTR_retrotransposon 109501 120244  .  -  .
+6 contig_58 EDTA Gypsy_LTR_retrotransposon 134211 144936  .  -  .
+                                                                                                                                                                                V9
+1 ID=LTRRT_1;Parent=repeat_region_1;Name=contig_53:399461..389570;classification=LTR/Gypsy;sequence_ontology=SO:0002265;ltr_identity=0.9487;method=structural;motif=TGCA;tsd=CTTTG
+2 ID=LTRRT_2;Parent=repeat_region_2;Name=contig_53:791457..796885;classification=LTR/Copia;sequence_ontology=SO:0002264;ltr_identity=0.9602;method=structural;motif=TGCA;tsd=AAATA
+3 ID=LTRRT_3;Parent=repeat_region_3;Name=contig_53:845770..853308;classification=LTR/Copia;sequence_ontology=SO:0002264;ltr_identity=0.9612;method=structural;motif=TGTA;tsd=AGAGC
+4 ID=LTRRT_4;Parent=repeat_region_4;Name=contig_53:875697..869090;classification=LTR/Gypsy;sequence_ontology=SO:0002265;ltr_identity=0.9479;method=structural;motif=TGCA;tsd=GAACT
+5 ID=LTRRT_5;Parent=repeat_region_5;Name=contig_58:120244..109501;classification=LTR/Gypsy;sequence_ontology=SO:0002265;ltr_identity=0.9878;method=structural;motif=TGCA;tsd=AAGAT
+6 ID=LTRRT_6;Parent=repeat_region_6;Name=contig_58:144936..134211;classification=LTR/Gypsy;sequence_ontology=SO:0002265;ltr_identity=0.9927;method=structural;motif=TGCA;tsd=GAATG
+         V1     V4     V5                        V3                     Name
+1 contig_53 389570 399461 Gypsy_LTR_retrotransposon contig_53:399461..389570
+2 contig_53 791457 796885 Copia_LTR_retrotransposon contig_53:791457..796885
+3 contig_53 845770 853308 Copia_LTR_retrotransposon contig_53:845770..853308
+4 contig_53 869090 875697 Gypsy_LTR_retrotransposon contig_53:875697..869090
+5 contig_58 109501 120244 Gypsy_LTR_retrotransposon contig_58:120244..109501
+6 contig_58 134211 144936 Gypsy_LTR_retrotransposon contig_58:144936..134211
+  Identity length
+1   0.9487   9892
+2   0.9602   5429
+3   0.9612   7539
+4   0.9479   6608
+5   0.9878  10744
+6   0.9927  10726
+Reading classification: intact_LTR.fa.rexdb-plant.cls.tsv
+                                      TE  Order Superfamily  Clade Complete
+                                  <char> <char>      <char> <char>   <char>
+1: contig_117:1062233..1058298#LTR/Gypsy    LTR       Gypsy  Tekay       no
+2: contig_117:1310942..1305160#LTR/Copia    LTR       Copia    TAR       no
+3: contig_117:1390624..1395718#LTR/Copia    LTR       Copia   Tork      yes
+4: contig_117:1421094..1416986#LTR/Gypsy    LTR       Gypsy    CRM       no
+5: contig_117:1580974..1590107#LTR/Copia    LTR       Copia   SIRE      yes
+6: contig_117:1612163..1617143#LTR/Copia    LTR       Copia    Ale      yes
+   Strand                                     Domains
+   <char>                                      <char>
+1:      -                                   GAG|Tekay
+2:      -                                      RH|TAR
+3:      + GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+4:      -                  GAG|CRM PROT|CRM CHDCR|CRM
+5:      + GAG|SIRE PROT|SIRE INT|SIRE RT|SIRE RH|SIRE
+6:      +      GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+                         Name Classification Order Superfamily Clade Complete
+1 contig_117:1062233..1058298      LTR/Gypsy   LTR       Gypsy Tekay       no
+2 contig_117:1310942..1305160      LTR/Copia   LTR       Copia   TAR       no
+3 contig_117:1390624..1395718      LTR/Copia   LTR       Copia  Tork      yes
+4 contig_117:1421094..1416986      LTR/Gypsy   LTR       Gypsy   CRM       no
+5 contig_117:1580974..1590107      LTR/Copia   LTR       Copia  SIRE      yes
+6 contig_117:1612163..1617143      LTR/Copia   LTR       Copia   Ale      yes
+  Strand                                     Domains
+1      -                                   GAG|Tekay
+2      -                                      RH|TAR
+3      + GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+4      -                  GAG|CRM PROT|CRM CHDCR|CRM
+5      + GAG|SIRE PROT|SIRE INT|SIRE RT|SIRE RH|SIRE
+6      +      GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+                         Name         V1      V4      V5
+1 contig_117:1062233..1058298 contig_117 1058298 1062233
+2 contig_117:1310942..1305160 contig_117 1305160 1310942
+3 contig_117:1390624..1395718 contig_117 1390624 1395718
+4 contig_117:1421094..1416986 contig_117 1416986 1421094
+5 contig_117:1580974..1590107 contig_117 1580974 1590107
+6 contig_117:1612163..1617143 contig_117 1612163 1617143
+                         V3 Identity length Classification Order Superfamily
+1 Gypsy_LTR_retrotransposon   0.9541   3936      LTR/Gypsy   LTR       Gypsy
+2 Copia_LTR_retrotransposon   0.9943   5783      LTR/Copia   LTR       Copia
+3 Copia_LTR_retrotransposon   0.9643   5095      LTR/Copia   LTR       Copia
+4 Gypsy_LTR_retrotransposon   0.9665   4109      LTR/Gypsy   LTR       Gypsy
+5 Copia_LTR_retrotransposon   0.9658   9134      LTR/Copia   LTR       Copia
+6 Copia_LTR_retrotransposon   0.9620   4981      LTR/Copia   LTR       Copia
+  Clade Complete Strand                                     Domains
+1 Tekay       no      -                                   GAG|Tekay
+2   TAR       no      -                                      RH|TAR
+3  Tork      yes      + GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+4   CRM       no      -                  GAG|CRM PROT|CRM CHDCR|CRM
+5  SIRE      yes      + GAG|SIRE PROT|SIRE INT|SIRE RT|SIRE RH|SIRE
+6   Ale      yes      +      GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+Counts per Superfamily
+
+Copia Gypsy  <NA> 
+  149   115    13 
+Counts per Clade
+
+    Ale  Alesia  Athila  Bianca     CRM   Ivana   Reina  Retand    SIRE     TAR 
+     61       2      60      14      14      41      10      16       6       3 
+  Tekay    Tork unknown    <NA> 
+     14      21       2      13 
