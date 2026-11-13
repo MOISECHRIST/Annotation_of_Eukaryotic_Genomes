@@ -6,7 +6,7 @@
 ├── control_files/
 ├── data
 │   └── assemblies
-│       └── flye
+│       └── flye/
 ├── plots
 ├── README.md
 ├── results
