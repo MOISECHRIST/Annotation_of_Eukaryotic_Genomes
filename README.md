@@ -1,4 +1,15 @@
 # Annotation of Eukaryotic Genomes
+
+## Some results
+
+<img src="plots/01_LTR_Copia_Gypsy_cladelevel.png" height="400" width="550"/>
+
+<img src="plots/03-TE_gene_density-1.png" height="400" width="550"/>
+
+<img src="plots/BUSCO_plot.png" height="400" width="550"/>
+
+<img src="plots/all_genomes_TAIR10-1.png" height="400" width="550"/>
+
 ## Project structure
 
 ```
