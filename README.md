@@ -3,12 +3,12 @@
 
 ```
 .
+├── README.md
 ├── control_files/
 ├── data
 │   └── assemblies
 │       └── flye/
-├── plots
-├── README.md
+├── plots/
 ├── results
 │   ├── comparisons/
 │   ├── EDTA/
